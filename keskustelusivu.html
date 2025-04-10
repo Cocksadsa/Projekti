@@ -6,16 +6,18 @@
 </head>
 <body>
     <nav>
-    <a href="/CV.html">CV</a>
-    <a href="/työkokemus.html">Työkokemus</a>
+    <a href="/tiev24n/eemil/Projekti/CV.html">CV</a>
+    <a href="/tiev24n/eemil/Projekti/työkokemus.html">Työkokemus</a>
+    <a href="/tiev24n/eemil/Projekti/portfolio/index.html">Portfolio</a>
     </nav>
+    <button id="avaadialogi">Avaa Lomake</button>
+    <dialog id="dialogini">
+    <button id="suljedialogi">Sulje Lomake</button>
     <form action="keskustelusivu.html" method="post">
         <label for="email">Sähköposti:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="name">Nimi:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="email" id="email" name="email" /><br> 
         <label for="date">Aika:</label>
-        <input type="date" id="date" name="date"><br>
+        <input type="date" id="date" name="date" /><br>
         <label for="message">Viesti:</label><br>
         <textarea id="message" name="message"></textarea><br>
         <label for="mikä">Minkälainen Viesti?</label>
@@ -23,11 +25,12 @@
     <option value="Kysymys">Kysymys</option>
     <option value="Kommentti">Kommentti</option>
   </select>
-  <br><br>
-        <label for="saako">Saako käyttää tietojasi?</label><br>
-        <input type="checkbox" id="saako"><br>
+  <br></br>
+        <label for="saako">Saako käyttää tietojasi?</label></br>
+        <input type="checkbox" id="saako" /></br>
         <input type="submit" value="Lähetä">
     </form>
+</dialog>
     <h3>Viestit:</h3>
     <div class="chat-messages">
         <div style="border-top: 4px solid #000;"></div>
@@ -58,6 +61,19 @@
         <div class="message-time">4/4/2024 18:99</div>
         <div style="border-bottom: 3px double black;"></div>
     </div>
+<script>
+    const dialog = document.getElementById('dialogini');
+    const avaaDialogi = document.getElementById('avaadialogi');
+    const suljeDialogi = document.getElementById('suljedialogi');
+
+    avaadialogi.addEventListener('click', () => {
+        dialog.showModal();
+    });
+
+    suljedialogi.addEventListener('click', () => {
+        dialog.close();
+    });
+    </script>
 
     
 
