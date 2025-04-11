@@ -33,6 +33,20 @@ body {
         font-size: 18px;
     }
 
+    a {color : rgb(182, 25, 25);}
+    a:hover {color : rgb(212, 0, 255);}
+    a:visited {color : rgb(12, 11, 11);}
+
+    button {
+        background-color: rgb(182, 25, 25);
+        color: white;
+    }
+
+    button:hover {
+        background-color: rgb(212, 0, 255);
+        color: white;
+    }
+
   .container {
         width: 80%;
         margin: auto;
