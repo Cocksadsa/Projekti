@@ -1,17 +1,38 @@
 body {
-    background-color: rgb(13, 120, 156);
+    background-color: rgb(60, 135, 160);
+    margin-left: 64px;
+    margin-right: 64px;
   }
   
   h1 {
     color: navy;
     text-align: center;
+    font-size: 60px;
   }
   
   p {
     font-size: 18px;
     color: darkgray;
   }
-  
+
+  h2 {
+    color: rgb(9, 161, 154);
+    text-align: center;
+    font-size: 48px;
+  }  
+
+    h3 {
+        color: rgb(223, 158, 19);
+        text-align: center;
+        font-size: 32px;
+    }
+
+    h4 {
+        color: rgb(120, 10, 148);
+        text-align: center;
+        font-size: 18px;
+    }
+
   .container {
         width: 80%;
         margin: auto;
