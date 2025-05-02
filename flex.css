@@ -39,3 +39,15 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
   }
+
+  img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+  }
+  .inner-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
