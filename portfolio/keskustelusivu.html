@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="../tyylit.css">
 </head>
 <body>
+    <div class="container">
+    <div class="menu">
     <nav>
     <a href="../CV.html">CV</a>
     <a href="../työkokemus.html">Työkokemus</a>
     <a href="./index.html">Portfolio</a>
     </nav>
     <button id="avaadialogi">Avaa Lomake</button>
+</div>
     <dialog id="dialogini">
     <button id="suljedialogi">Sulje Lomake</button>
     <form action="keskustelusivu.html" method="post">
@@ -36,7 +39,9 @@
         <input type="submit" value="Lähetä">
     </form>
 </dialog>
+<div class="header">
     <h3>Viestit:</h3>
+</div>
     <div class="chat-messages">
         <div style="border-top: 4px solid #000;"></div>
         <div class="chat-messages">
@@ -66,6 +71,7 @@
         <div class="message-time">4/4/2024 18:99</div>
         <div style="border-bottom: 3px double black;"></div>
     </div>
+</div>
 <script>
     const dialog = document.getElementById('dialogini');
     const avaaDialogi = document.getElementById('avaadialogi');
