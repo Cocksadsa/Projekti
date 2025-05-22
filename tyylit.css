@@ -2,17 +2,39 @@ body {
     background-color: rgb(60, 135, 160);
     margin-left: 64px;
     margin-right: 64px;
+}
+
+@media screen and (min-width: 640px) { 
+ body {
+  margin-left:64px;
+  margin-right:64px;
+}
+  h1 {font-size: 60px;}
+ h2 {font-size: 48px;}
+ h3 {font-size: 32px;}
+ h4 {font-size: 18px;}
+
+}
+
+  @media screen and (max-width: 640px) {
+  .nav{
+    flex-direction:column;
   }
-  h1 {
+  body {
+    margin-right:16px;
+    margin-left:16px;
+  }
+   h1 {font-size:32px;}
+h2 {font-size: 26px;}
+h3 {font-size: 22px;}
+h4 {font-size: 18px;}
+}
+  h1, h2, h3, h4, h5, h6 {
   font-family: "Nabla", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
     text-align: center;
-    font-size: 44px;
-  font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
     }
 
   header {
@@ -28,29 +50,27 @@ body {
   }
 
   
-  p {
+  p, li {
   font-family: "Newsreader", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+ 
 
   h2 {
     color: rgb(9, 161, 154);
     text-align: center;
-    font-size: 38px;
   }  
 
     h3 {
         color: rgb(223, 158, 19);
         text-align: center;
-        font-size: 26px;
     }
 
     h4 {
         color: rgb(120, 10, 148);
         text-align: center;
-        font-size: 18px;
     }
 
     nav:a {
@@ -58,6 +78,12 @@ body {
      margin-left: 3em;
      margin-bottom:1em;
      margin-right:3em;
+     border: 5px solid black;
+     float: left;
+     display: block;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
     }
 
     menu:a {
