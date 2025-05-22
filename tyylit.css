@@ -3,17 +3,37 @@ body {
     margin-left: 64px;
     margin-right: 64px;
   }
-  
   h1 {
-    color: navy;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     text-align: center;
     font-size: 44px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+    }
+
+  header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
   }
   
-  p {
-    font-size: 18px;
-    color: darkgray;
+  nav {
+    display: flex;
+    gap: 3em;
+    padding: 1em 1em 3em;
   }
+
+  
+  p {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
   h2 {
     color: rgb(9, 161, 154);
@@ -31,6 +51,37 @@ body {
         color: rgb(120, 10, 148);
         text-align: center;
         font-size: 18px;
+    }
+
+    nav:a {
+     margin-top: 1em;
+     margin-left: 3em;
+     margin-bottom:1em;
+     margin-right:3em;
+    }
+
+    menu:a {
+      margin-top: 2em;
+      margin-left: 3em;
+    }
+
+    .content:p {
+      margin-top: 5em;
+      margin-left: 3em;
+    }
+
+    .content:h3 {
+      margin-top: 5em;
+      margin-left: 3em;
+    }
+
+    .footer {
+      text-align:center;
+    }
+
+    .footer:a {
+      margin-left:2em;
+      margin-top:3em;
     }
 
     a {color : rgb(182, 25, 25);}
@@ -117,7 +168,4 @@ body {
   }
   .container2 > div.content {
     grid-area: content;
-  }
-
- 
-
+    }
