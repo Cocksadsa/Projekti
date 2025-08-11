@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Muuttujia ja Tietotyyppejä</title>
+    <link rel="stylesheet" href="../tyylit.css">
+</head>
+<body>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+    var henkilot = [
+        {
+        name: "Merja Meikäläinen",
+        age: 20,
+        job: "Opiskelija",
+        driversLicense: true
+    },
+    {
+        name: "Teppo Teikäläinen",
+        age: 25,
+        job: "Sähköteknikko",
+        driversLicense: true
+    },
+    {
+        name: "Helena Heikäläinen",
+        age: 30,
+        job: "ohjelmistosuunnittelija",
+        driversLicense: false
+    },
+    {
+        name: "Semir Sikäläinen",
+        age: 18,
+        job: "opiskelija",
+        driversLicense: true
+    },
+    {
+        name: "Tomas Täkäläinen",
+        age: 22,
+        job: "linja-autonkuljettaja",
+        driversLicense: true
+    }
+
+]
+let rivit = document.getElementById("rivit")
+function luoRivit() {
+    let vanhtbody = rivit.innerHTML;
+    rivit.innerHTML = ""
+}
+    for (var henkilo of henkilot) {
+        let rivi = document.createElement("tr");
+
+        let nimi = document.createElement("td");
+        nimi.innerHTML = henkilo.name;
+        let ika = document.createElement("td");
+        ika.innerHTML = henkilo.age;
+        let tyo = document.createElement("td");
+        tyo.innerHTML = henkilo.job;
+        let ajokortti = document.createElement("td");
+        ajokortti.innerHTML = henkilo.driversLicense;
+        rivi.append(nimi, ika, tyo, ajokortti)
+        rivit.append(rivi)
+        
+    }
+    
+});
+    
+    </script> 
+<main>
+<div class="container">
+<div class="header"><h1>Henkilötiedot</h1></div>
+<div class="nav">
+        <a href="../CV.html">CV</a>
+        <a href="../työkokemus.html">Työkokemus</a>
+        </div>
+<div class="content">
+<table>
+<thead>
+<tr>
+<th>Nimi</th>
+<th>Ikä</th>
+<th>Työ</th>
+<th>Ajokortti</th>
+</tr>
+</thead>
+
+<tbody id="rivit"></tbody>
+
+</table>
+</div>
+<div class="menu">
+        <a href="./keskustelusivu.html">Keskustelusivu</a>
+        <a href="../flex.html">Flex</a>
+    </div>
+</div>
+</main>
+</body>
+</html>
